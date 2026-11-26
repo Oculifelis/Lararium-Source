@@ -1,0 +1,77 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+version = "${mod_version}+${minecraft_version}"
+group = 'com.oculifelis.lararium'
+base { archivesName = 'lararium-neoforge' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+repositories {
+    maven { url='https://maven.theillusivec4.top/'; content { includeGroup 'top.theillusivec4.curios' } }
+    maven { url='https://maven.blamejared.com/'; content { includeGroup 'mezz.jei'; includeGroup 'net.mezzdev.config' } }
+    maven { url='https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
+}
+dependencies {
+    implementation files('../libs/fundamentum-neoforge-2.0.0+26.2.jar')
+    implementation files('../libs/ostentum-neoforge-1.10.0+26.2.jar')
+    compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
+    runtimeOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}"
+    compileOnly "maven.modrinth:jade:${jade_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    if (project.hasProperty('compat')) {
+        runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+        runtimeOnly "maven.modrinth:jade:${jade_version}"
+    }
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.12.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+neoForge {
+    version = project.neo_version
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run/client')
+            jvmArgument '-Xmx4G'
+            systemProperty 'fundamentum.nofocus', 'true'
+            systemProperty 'lararium.devtest', project.hasProperty('clienttest') ? 'true' : 'false'
+        }
+        server {
+            server()
+            gameDirectory = project.file('run/server')
+            programArgument '--nogui'
+            jvmArgument '-Xmx3G'
+            systemProperty 'lararium.selftest', project.hasProperty('selftest') ? 'true' : 'false'
+        }
+        configureEach { logLevel = org.slf4j.event.Level.INFO }
+    }
+    mods { lararium { sourceSet(sourceSets.main) } }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding='UTF-8' }
+tasks.named('test') { useJUnitPlatform() }
+tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps=false;reproducibleFileOrder=true }
+// Read the checkout when Gradle starts, rather than carrying an old revision through a build queue.
+def sourceRevision = new File(projectDir.parentFile, '.git').exists()
+    ? providers.exec { workingDir projectDir.parentFile; commandLine 'git', 'rev-parse', 'HEAD' }.standardOutput.asText.map { it.trim() }
+    : providers.gradleProperty('sourceCommit').orElse('development')
+tasks.named('jar') { manifest.attributes('Implementation-Title':'Lararium','Implementation-Version':project.version,'Implementation-Vendor':'Oculifelis','Build-Source':sourceRevision.get()) }
+tasks.named('processResources') {
+    inputs.property 'mod_version', project.mod_version
+    filesMatching('META-INF/neoforge.mods.toml') { expand mod_version:project.mod_version }
+    from('LICENSE') { into 'META-INF' }
+    from('COPYING') { into 'META-INF' }
+    from('CREDITS.md') { into 'META-INF' }
+}
+
+// A self-test server shuts down normally even when a gameplay assertion fails.
+if (project.hasProperty('selftest')) {
+    tasks.named('runServer') {
+        def resultFile = project.file('run/server/lararium-selftest-result.json')
+        doFirst { project.delete(resultFile) }
+        doLast {
+            if (!resultFile.exists() || new groovy.json.JsonSlurper().parse(resultFile).passed != true) {
+                throw new GradleException('Lararium dedicated server checks failed. See the LARARIUMTEST lines in latest.log.')
+            }
+        }
+    }
+}

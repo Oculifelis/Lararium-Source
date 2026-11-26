@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "awake=true,facing=north,pulse=true": {
+      "model": "lararium:block/hollow_heart",
+      "y": 0
+    },
+    "awake=true,facing=north,pulse=false": {
+      "model": "lararium:block/hollow_heart",
+      "y": 0
+    },
+    "awake=false,facing=north,pulse=true": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 0
+    },
+    "awake=false,facing=north,pulse=false": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 0
+    },
+    "awake=true,facing=east,pulse=true": {
+      "model": "lararium:block/hollow_heart",
+      "y": 90
+    },
+    "awake=true,facing=east,pulse=false": {
+      "model": "lararium:block/hollow_heart",
+      "y": 90
+    },
+    "awake=false,facing=east,pulse=true": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 90
+    },
+    "awake=false,facing=east,pulse=false": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 90
+    },
+    "awake=true,facing=south,pulse=true": {
+      "model": "lararium:block/hollow_heart",
+      "y": 180
+    },
+    "awake=true,facing=south,pulse=false": {
+      "model": "lararium:block/hollow_heart",
+      "y": 180
+    },
+    "awake=false,facing=south,pulse=true": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 180
+    },
+    "awake=false,facing=south,pulse=false": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 180
+    },
+    "awake=true,facing=west,pulse=true": {
+      "model": "lararium:block/hollow_heart",
+      "y": 270
+    },
+    "awake=true,facing=west,pulse=false": {
+      "model": "lararium:block/hollow_heart",
+      "y": 270
+    },
+    "awake=false,facing=west,pulse=true": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 270
+    },
+    "awake=false,facing=west,pulse=false": {
+      "model": "lararium:block/hollow_heart_sleep",
+      "y": 270
+    }
+  }
+}

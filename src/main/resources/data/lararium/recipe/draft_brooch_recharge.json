@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "lararium:draft_brooch",
+    "minecraft:amethyst_shard"
+  ],
+  "result": {
+    "id": "lararium:draft_brooch",
+    "count": 1
+  }
+}

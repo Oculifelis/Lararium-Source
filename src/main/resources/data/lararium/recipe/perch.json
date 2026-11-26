@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "CTC",
+    " C "
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "T": "lararium:hollow_thread"
+  },
+  "result": {
+    "id": "lararium:perch",
+    "count": 4
+  }
+}

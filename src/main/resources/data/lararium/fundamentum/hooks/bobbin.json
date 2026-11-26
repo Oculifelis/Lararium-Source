@@ -1,0 +1,9 @@
+{
+  "item": "lararium:bobbin_hook",
+  "range": 18,
+  "shoot_speed": 1.5,
+  "pull_speed": 0.7,
+  "count": 2,
+  "air_seconds": 2.5,
+  "texture": "ostentum:textures/entity/hook/amethyst_hook.png"
+}
