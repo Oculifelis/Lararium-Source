@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "down=false,facing=north,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil"
+    },
+    "down=false,facing=east,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil",
+      "y": 90
+    },
+    "down=false,facing=south,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil",
+      "y": 180
+    },
+    "down=false,facing=west,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil",
+      "y": 270
+    },
+    "down=false,facing=north,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_r"
+    },
+    "down=false,facing=east,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_r",
+      "y": 90
+    },
+    "down=false,facing=south,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_r",
+      "y": 180
+    },
+    "down=false,facing=west,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_r",
+      "y": 270
+    },
+    "down=false,facing=north,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_l"
+    },
+    "down=false,facing=east,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_l",
+      "y": 90
+    },
+    "down=false,facing=south,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_l",
+      "y": 180
+    },
+    "down=false,facing=west,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_l",
+      "y": 270
+    },
+    "down=false,facing=north,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_lr"
+    },
+    "down=false,facing=east,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_lr",
+      "y": 90
+    },
+    "down=false,facing=south,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_lr",
+      "y": 180
+    },
+    "down=false,facing=west,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_lr",
+      "y": 270
+    },
+    "down=true,facing=north,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_d"
+    },
+    "down=true,facing=east,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_d",
+      "y": 90
+    },
+    "down=true,facing=south,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_d",
+      "y": 180
+    },
+    "down=true,facing=west,left=false,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_d",
+      "y": 270
+    },
+    "down=true,facing=north,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dr"
+    },
+    "down=true,facing=east,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dr",
+      "y": 90
+    },
+    "down=true,facing=south,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dr",
+      "y": 180
+    },
+    "down=true,facing=west,left=false,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dr",
+      "y": 270
+    },
+    "down=true,facing=north,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_dl"
+    },
+    "down=true,facing=east,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_dl",
+      "y": 90
+    },
+    "down=true,facing=south,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_dl",
+      "y": 180
+    },
+    "down=true,facing=west,left=true,right=false,up=false": {
+      "model": "lararium:block/threshold_veil_dl",
+      "y": 270
+    },
+    "down=true,facing=north,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dlr"
+    },
+    "down=true,facing=east,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dlr",
+      "y": 90
+    },
+    "down=true,facing=south,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dlr",
+      "y": 180
+    },
+    "down=true,facing=west,left=true,right=true,up=false": {
+      "model": "lararium:block/threshold_veil_dlr",
+      "y": 270
+    },
+    "down=false,facing=north,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_u"
+    },
+    "down=false,facing=east,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_u",
+      "y": 90
+    },
+    "down=false,facing=south,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_u",
+      "y": 180
+    },
+    "down=false,facing=west,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_u",
+      "y": 270
+    },
+    "down=false,facing=north,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ur"
+    },
+    "down=false,facing=east,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ur",
+      "y": 90
+    },
+    "down=false,facing=south,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ur",
+      "y": 180
+    },
+    "down=false,facing=west,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ur",
+      "y": 270
+    },
+    "down=false,facing=north,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ul"
+    },
+    "down=false,facing=east,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ul",
+      "y": 90
+    },
+    "down=false,facing=south,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ul",
+      "y": 180
+    },
+    "down=false,facing=west,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ul",
+      "y": 270
+    },
+    "down=false,facing=north,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ulr"
+    },
+    "down=false,facing=east,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ulr",
+      "y": 90
+    },
+    "down=false,facing=south,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ulr",
+      "y": 180
+    },
+    "down=false,facing=west,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_ulr",
+      "y": 270
+    },
+    "down=true,facing=north,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ud"
+    },
+    "down=true,facing=east,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ud",
+      "y": 90
+    },
+    "down=true,facing=south,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ud",
+      "y": 180
+    },
+    "down=true,facing=west,left=false,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_ud",
+      "y": 270
+    },
+    "down=true,facing=north,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udr"
+    },
+    "down=true,facing=east,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udr",
+      "y": 90
+    },
+    "down=true,facing=south,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udr",
+      "y": 180
+    },
+    "down=true,facing=west,left=false,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udr",
+      "y": 270
+    },
+    "down=true,facing=north,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_udl"
+    },
+    "down=true,facing=east,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_udl",
+      "y": 90
+    },
+    "down=true,facing=south,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_udl",
+      "y": 180
+    },
+    "down=true,facing=west,left=true,right=false,up=true": {
+      "model": "lararium:block/threshold_veil_udl",
+      "y": 270
+    },
+    "down=true,facing=north,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udlr"
+    },
+    "down=true,facing=east,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udlr",
+      "y": 90
+    },
+    "down=true,facing=south,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udlr",
+      "y": 180
+    },
+    "down=true,facing=west,left=true,right=true,up=true": {
+      "model": "lararium:block/threshold_veil_udlr",
+      "y": 270
+    }
+  }
+}

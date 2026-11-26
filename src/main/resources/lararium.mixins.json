@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.oculifelis.lararium.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["TestAudioGuard", "TestMouseGuard"],
+  "injectors": {"defaultRequire": 1}
+}

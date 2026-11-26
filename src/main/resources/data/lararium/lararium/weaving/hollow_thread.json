@@ -1,0 +1,7 @@
+{
+  "input": "minecraft:string",
+  "output": "lararium:hollow_thread",
+  "count": 1,
+  "breaths": 2,
+  "ticks": 80
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ostentum:amethyst_hook",
+    "lararium:hollow_thread",
+    "lararium:hollow_thread",
+    "lararium:hollow_thread",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot"
+  ],
+  "result": {
+    "id": "lararium:bobbin_hook",
+    "count": 1
+  }
+}

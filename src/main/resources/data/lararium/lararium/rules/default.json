@@ -1,0 +1,20 @@
+{
+  "capacity": 256,
+  "shard_breaths": 32,
+  "range": 8,
+  "height": 12,
+  "max_cells": 512,
+  "min_cells": 4,
+  "spire_height": 5,
+  "spire_ratio": 1.4,
+  "vault_width": 5,
+  "vault_depth": 3,
+  "vault_height": 3,
+  "vault_cells": 45,
+  "lift_speed": 0.32,
+  "lift_ticks": 30,
+  "shelter_multiplier": 0.28,
+  "brooch_fall_distance": 5,
+  "brooch_cooldown": 400,
+  "brooch_duration": 100
+}

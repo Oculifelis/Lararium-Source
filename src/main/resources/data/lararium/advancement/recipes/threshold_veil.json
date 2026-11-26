@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:string"
+          }
+        ]
+      }
+    },
+    "crafted": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "lararium:threshold_veil"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "material",
+      "crafted"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lararium:threshold_veil"
+    ]
+  }
+}

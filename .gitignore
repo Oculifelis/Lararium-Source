@@ -1,0 +1,14 @@
+.gradle/
+**/build/
+**/run/
+**/run-*/
+libs/
+reference/
+previews/
+evidence/
+dist/
+*.log
+__pycache__/
+*.pyc
+*.lock
+*.wait

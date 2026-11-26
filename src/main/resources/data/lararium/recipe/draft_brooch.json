@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TFT",
+    "CAC",
+    "TFT"
+  ],
+  "key": {
+    "T": "lararium:hollow_thread",
+    "F": "minecraft:feather",
+    "C": "minecraft:copper_ingot",
+    "A": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "lararium:draft_brooch",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Lararium",
+  "icon": "lararium:field_notes",
+  "openers": [
+    "lararium:field_notes"
+  ],
+  "chapters": [
+    {
+      "id": "start",
+      "title": "The first hollow",
+      "icon": "lararium:hollow_heart"
+    },
+    {
+      "id": "inhabitants",
+      "title": "Four inhabitants",
+      "icon": "lararium:tuning_fork"
+    },
+    {
+      "id": "household",
+      "title": "A household",
+      "icon": "lararium:house_bell"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "lararium:root",
+  "display": {
+    "icon": {
+      "id": "lararium:hollow_heart"
+    },
+    "title": {
+      "text": "Something to Keep"
+    },
+    "description": {
+      "text": "Wake a Keeper in a compact room."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "heard": {
+      "trigger": "fundamentum:unlocked",
+      "conditions": {
+        "id": "lararium:awaken_nook"
+      }
+    }
+  }
+}
